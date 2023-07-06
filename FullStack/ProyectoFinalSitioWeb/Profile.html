@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Perfil</title>
     <link rel="shortcut icon" href="./Imagenes/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -29,59 +29,23 @@
     <br>
     <hr align="center" size="0.5">
     <main>
-        <center>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Juan">
-                </div>
-                <br>
-                <div>
-                    <label for="Apellido" >Apellido</label>
-                    <input type="text" placeholder="Alvarez">
-                </div>
-                <br>
-                <div>
-                    <label for="Edad">Edad</label>
-                    <input type="date">
-                </div>
-                <br>
-                <div>
-                    <label for="genero">Genero</label>
-                    <select name="genero" id="">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="binario">Binario</option>
-                        <option value="nodecirlo">Prefiero No Decirlo</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" required name="mail" placeholder="juanalvarez@gmail.com">
-                </div>
-                <br>
-                <div>
-                    <label for="direccion">Direccion</label>
-                    <input type="text" name="direccion" placeholder="Santa Fe 1345">
-                </div>
-                <br>
-                <div>
-                    <label for="nacionalidad">Nacionalidad</label>
-                    <input type="radio" name="nacionalidad" value="arg">Argentina
-                    <input type="radio" name="nacionalidad" value="brasil">Brasil
-                </div>
-                <br>
-                <div>
-                    <label for="contrasena">Contrasena</label>
-                    <input type="password">
-                </div>
-                <br>
-                <input type="submit" value="Registrarse">
-            </form>
-        </center>
+        
+        <div>
+           <ul>
+                <li><label for="nombre">Nombre</label></li>
+                <li><label for="Apellido">Apellido</label></li>
+                <li><label for="Edad">Edad</label></li>
+                <li><label for="Correo">Correo</label></li>
+                <li><label for="genero">Genero</label></li>
+                <li><label for="Direccion">Direccion</label></li>
+                <li><label for="Nacionalidad">Nacionalidad</label></li>
+                </ul>
+            </div>
+        
+        <input type="button" name="cambiarclave" id="change_pwd" value="Cambiar Contrasena">
+        <input type="button" name="cambiarperfil" id="change_profile" value="Cambiar Datos Perfil">
     </main>
-    <br>
+    <br><br><br>
     <hr align="center" size="0.5">
     <footer>
         <center><img src="./Imagenes/favicon.png" alt="Logo" width="100"></center>
