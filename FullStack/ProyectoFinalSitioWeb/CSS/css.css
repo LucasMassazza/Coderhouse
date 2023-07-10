@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+/*CSS de Header*/
+header{
+    background-color: #232226;
+}
+
+.inline{
+    display: inline;
+}
+
+.Perfil{
+    position: absolute;
+    right: 20px;
+    top: 2.55%;
+    font-size: medium;
+}
+
+h3{
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aperturamenu{
+    display: inline;
+    position: absolute;
+    top: 2.55%;
+    left: 20px;
+
+}
+
+nav{
+    border: whitesmoke;
+    line
+}
+/*CSS de Main*/
+main{
+    background-color: #3e5954;
+}
+
+
+.DivIndex{
+    position: left;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.LinkIndex{
+    font-style: normal;
+    font-size: medium;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    font-display: none;
+}
+
+.ImagenIndex{
+    opacity: 0.6;
+    width: 300px;
+    height: 300px;
+}
+
+
+footer{
+    background-color: #5e9188;
+}
+
+
+
+
