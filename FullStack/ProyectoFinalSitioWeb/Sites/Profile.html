@@ -10,7 +10,7 @@
 <body>
     <header>
         <div>
-            <img src="../Imagenes/favicon.png" alt="Logo" class="Logo">
+            <center><img src="../Imagenes/favicon.png" alt="Logo" class="Logo"></center>
             <h1>MotoMoto</h1>
         </div>
         
@@ -23,7 +23,6 @@
                 <li><a href="./UsedBikes.html" >Usadas</a></li>
                 <li><a href="./Stores.html" >Tiendas</a></li>
                 <li><a href="./TestDrive.html" >Test Drive</a></li>
-                <br>
                 <li><a href="./Registro.html" >Registro</a></li>
                 <li><a href="./Profile.html" >Mi Perfil</a></li>
             </ul>
@@ -34,7 +33,7 @@
     <main class="mainprofile">
         <section class="DatosPerfil">
             <div>
-                <ul>
+                <ul class="ListaDatosPerfil">
                      <li><label for="nombre">Nombre</label></li>
                      <li><label for="Apellido">Apellido</label></li>
                      <li><label for="Edad">Edad</label></li>
@@ -44,9 +43,10 @@
                      <li><label for="Nacionalidad">Nacionalidad</label></li>
                      </ul>
                  </div>
-             
-             <input type="button" name="cambiarclave" id="change_pwd" value="Cambiar Contrasena" class="BotonDatos">
-             <input type="button" name="cambiarperfil" id="change_profile" value="Cambiar Datos Perfil" class="BotonDatos">
+            <div class="ContenedorBotonDatos">
+                <input type="button" name="cambiarclave" id="change_pwd" value="Cambiar Contrasena" class="BotonDatos">
+                <input type="button" name="cambiarperfil" id="change_profile" value="Cambiar Datos Perfil" class="BotonDatos">
+            </div>
         </section>
         
     </main>

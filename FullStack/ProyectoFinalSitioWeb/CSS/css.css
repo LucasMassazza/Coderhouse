@@ -68,6 +68,8 @@ nav a:hover{
 
 .Logo{
     width: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 /*CSS de Main*/
@@ -173,14 +175,27 @@ form{
 .DatosPerfil{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.ListaDatosPerfil{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.ListaDatosPerfil li{
+    padding-top: 20px;
+}
+
+.ContenedorBotonDatos{
+    text-align: center;
 }
 
 .BotonDatos{
     width: 150px;
     margin: 20px;
-    
+    margin-top: 30px;
 }
 
 
