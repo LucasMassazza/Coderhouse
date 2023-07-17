@@ -66,6 +66,10 @@ nav a:hover{
     color: aqua;
 }
 
+.Logo{
+    width: 150px;
+}
+
 /*CSS de Main*/
 main{
     background-color: #3e5954;
@@ -103,6 +107,83 @@ main{
     position: relative;
 
 }
+
+.TituloPaginas{
+    text-align: center;
+    font-size: x-large;
+}
+
+.ListaFiltro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 35px;
+
+}
+
+.Motos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border:2px #232226 solid;
+    margin-bottom:0px ;
+}
+
+.ImagenesMoto{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.ItemsNuevas{
+    border: 1px grey solid;
+    margin: 20px;
+}
+
+.ItemsNuevas:hover{
+    border: 2px rgb(0, 0, 0) solid;
+    margin: 20px;
+}
+
+.MainTiendas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tiendas{
+    padding: 6%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.BotonRegistro{
+    width: 100px;
+    align-self: center;
+}
+
+.DatosPerfil{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.BotonDatos{
+    width: 150px;
+    margin: 20px;
+    
+}
+
+
 /*CSS de Footer*/
 footer{
     display: flex;
