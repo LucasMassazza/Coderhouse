@@ -144,8 +144,14 @@ main{
     margin: 20px;
 }
 
+.ItemsNuevas p{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
 .ItemsNuevas:hover{
-    border: 2px rgb(0, 0, 0) solid;
+    border: 1px rgb(0, 0, 0) solid;
     margin: 20px;
 }
 
@@ -200,6 +206,25 @@ form{
     margin-top: 30px;
 }
 
+.DetalleMoto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.DetalleMoto img{
+    border: 1px #232226 solid;
+    width: 50%;
+    height: 200px;
+}
+
+.DetalleMoto article{
+    border: 1px #232226 solid;
+    width: 50%;
+    height: 200px;
+}
 
 /*CSS de Footer*/
 footer{
