@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Grids Body*/
+
+.bodyIndex{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1.8fr 0.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      "mainIndex mainIndex mainIndex"
+      "footer footer footer"; 
+}
+
+
+/*Header*/
+
+.header{
+    background-color: #232226;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "Menu";
+}
+
+.Menu{
+    grid-area: Menu;
+}
+
+.ListaMenu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
+    justify-content: space-evenly;
+
+}
+
+.ListaMenu li{
+    list-style: none;
+}
+
+.ListaMenu li a{
+    color: azure;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+.Logo{
+    grid-area: Logo;
+    
+}
+
+.logotipo{
+    width: 50px;
+}
+
+.logotipo img{
+    width: 300px;
+    border-radius: 5%;
+}
+
+
+h1{
+    text-align: center;
+    color: bisque;
+}
+
+
+.estilolink{
+    text-decoration: none;
+    color:greenyellow;
+}
+
+/*Main*/
+  
+.mainIndex {  
+
+    grid-area: mainIndex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SeleccionNuevas SeleccionUsadas"
+      "SeleccionTD SeleccionTiendas";
+    
+}
+
+.centradocontenedor{
+
+    text-align: center;
+
+}
+
+/*Index Nuevas*/
+.seleccionnuevas {
+     grid-area: SeleccionNuevas; 
+     background-image: url(../Imagenes/FotoNuevas.png);
+     background-size: cover;
+     background-position: center;
+
+}
+
+
+
+/*Index Usadas*/
+.seleccionusadas { 
+    grid-area: SeleccionUsadas; 
+    background-image: url(../Imagenes/FotoUsadas.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*Index Test Drive*/
+.selecciontestdrive { 
+    grid-area: SeleccionTD; 
+    background-image: url(../Imagenes/ImagenTestDrive.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Index Tiendas*/
+.seleccionnegocios { 
+    grid-area: SeleccionTiendas; 
+    background-image: url(../Imagenes/tienda.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+  
+ 
+  
+
+/*************************
+        Footer
+**************************/
+
+.footer { 
+    background-color: #232226;
+    grid-area: footer; 
+
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "contacto marcas"; 
+}
+
+
+.contacto { 
+    grid-area: contacto; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcas { 
+    grid-area: marcas; 
+}
+
+.contacto li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto img {
+    margin-right: 10px;
+}
+
+.contacto h6 {
+    margin: 0;
+}
+
+
+
+

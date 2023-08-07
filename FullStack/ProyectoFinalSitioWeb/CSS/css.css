@@ -2,11 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li{
     list-style: none;
+}
+
+.bodyIndex{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1.8fr 0.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      "mainIndex mainIndex mainIndex"
+      "footer footer footer"; 
 }
 
 /*CSS de Header*/
@@ -79,31 +91,21 @@ main{
     background-color: #3e5954;
 }
 
-.MainIndex{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly
+.mainIndex{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "SeleccionNuevas SeleccionUsadas"
+      "SeleccionTD SeleccionTiendas"; 
+    grid-area: mainIndex; 
 }
 
-.ImagenIndex{
-    width: 300px;
-    height: 150px;
-    opacity: 0.8;
-}
-
-.ImagenIndex:hover{
-    opacity: 1;
-}
-.DivIndex{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    text-align: center;
-    margin: 30px;
-}
+.SeleccionNuevas { grid-area: SeleccionNuevas; }
+.SeleccionUsadas { grid-area: SeleccionUsadas; }
+.SeleccionTD { grid-area: SeleccionTD; }
+.SeleccionTiendas { grid-area: SeleccionTiendas; }
 
 .LinkIndex{
     color: azure;
@@ -228,6 +230,8 @@ form{
 
 /*CSS de Footer*/
 footer{
+    grid-area: footer;
+    
     display: flex;
     background-color: #5e9188;
     flex-wrap: nowrap;
