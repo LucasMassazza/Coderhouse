@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/css.css">
-    <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
-    <title>Comprar Moto Nueva</title>
-</head>
-<body>
-    <header>
-        <div>
-            <center><img src="../Imagenes/favicon.png" alt="Logo" class="Logo"></center>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprar Moto</title>
+        <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/css.css">
+    </head>
+<body class="colorfondo-body">
+    <header class="header">
+            
+        <nav class="navbar navbar-expand-lg color-navbar" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./Index.html">
+                <img src="../Imagenes/favicon.png" alt="logo" class="logotipo">
+            </a>
             <h1>MotoMoto</h1>
-        </div>
-        
-        <!--<img src="./Imagenes/open_menu.png" alt="Menu" width="30" class="aperturamenu">-->
-        
-        <nav>
-            <ul class="ListaMenu">
-                <li><a href="../Index.html" >Inicio</a></li>
-                <li><a href="./NewBikes.html" >Nuevas</a></li>
-                <li><a href="./UsedBikes.html" >Usadas</a></li>
-                <li><a href="./Stores.html" >Tiendas</a></li>
-                <li><a href="./TestDrive.html" >Test Drive</a></li>
-                <br>
-                <li><a href="./Registro.html" >Registro</a></li>
-                <li><a href="./Profile.html" >Mi Perfil</a></li>
-            </ul>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  active colorletra-blanco"  href="../index.html" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./Sites/NewBikes.html">Nuevas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./Sites/UsedBikes.html">Usadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./Sites/TestDrive.html">Test Drive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./Sites/Registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./Sites/Profile.html">Mi Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <hr align="center" size="0.5">
     </header>
 
-    <main>
-        
-        <section class="DetalleMoto">
-            <div>
-                <img src="../Imagenes/placeholder-image.png" alt="Moto">
+    <main class="main-comprar">
+        <div class="motoneta">
+            <div class="Imagen-descripcion">
+                <div class="imagen-moto">
+                    <div class="centrado-imagenn">
+                        <img src="../Imagenes/MotosVenta/trk502x.jpeg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="descripcion-moto">
+                    <article class="colorletra-blanco">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum alias voluptas explicabo fugiat, culpa iste esse? Repellendus, maiores. Voluptatem dignissimos asperiores veniam laborum eaque natus minima odit, neque recusandae dolores?</article>
+                </div>
             </div>
-            <article>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus possimus temporibus nostrum. Fuga, dolore. Quod error quaerat voluptatum minima. Animi expedita id cum laudantium optio ullam vitae iure saepe dolorum?
-                Incidunt optio itaque qui dolore culpa praesentium in esse adipisci, soluta sequi excepturi aliquam dolorem dolores assumenda repellendus nobis molestias necessitatibus, ab laudantium? Nostrum atque officia excepturi corporis! Nulla, accusantium.
-                Ratione aspernatur a voluptatem vel quibusdam, at porro odio officia animi molestiae repudiandae sed, aliquid assumenda nam nisi id quis deserunt provident sequi iusto nihil, recusandae ipsum. Unde, modi quisquam!
-                Maxime molestias dolorem aliquam modi facere incidunt veritatis porro illo corporis? Quo ducimus incidunt unde ut voluptatem aperiam accusantium nisi dolore? Asperiores repudiandae delectus quos aliquam dignissimos architecto veritatis voluptatibus.</p>
-            </article>
-        </section>
-       
-        <div>
-            <h3>Modelo Moto y marca</h3>
-            <h3>$ Precio</h3>
         </div>
         
+            <div class="Modelo-Precio">
+                <h4 class="colorletra-blanco ">MODELO</h4>
+                <br><br><br>
+                <h4 class="colorletra-blanco">$ PRECIO</h4>
+            </div>
+        </div>
     </main>
+    
 
-    <footer>
-        <div>
-            <ul class="ListaFooter">
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/email.png" alt="Mail" width="20">
-                    <li><h6><a href="motomoto@gmail.com">motomoto@gmail.com</a></h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/instagram.png" alt="Ig" width="20">
-                    <li><h6><a href="@motmoto.oficial">@motomoto.oficial</a></h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/telefono-celular.png" alt="Cel" width="20">
-                    <li><h6>1145238475</h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/telefono.png" alt="Fijo" width="20">
-                    <li><h6>82739482</h6></li>
-                </li>
-            </ul>
-        </div>
-        
-        <img src="../Imagenes/favicon.png" alt="Logo" width="100">
-        
-        <div>
+    <footer class="footer colorfondo-footer footer-fixed">
+
+        <div class="contacto">
             <ul>
-                <li><img src="../Imagenes/KTM-Logo.svg.png" alt="Marcas" width="100" height="50"></li>
-                <li><img src="../Imagenes/Benelli-logo-1.jpg" alt="Marcas" width="100" height="50"></li>
-                <li><img src="../Imagenes/voge-motos-logo-615477ECB0-seeklogo.com.png" alt="Marcas" width="100" height="50"></li>
+                <li>
+                    <img src="../Imagenes/email.png" alt="Mail" width="20">
+                    <h6><a href="mailto:motomoto@gmail.com"class="colorletra-blanco">motomoto@gmail.com</a></h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/instagram.png" alt="Ig" width="20">
+                    <h6><a href="https://www.instagram.com/motmoto.oficial/"class="colorletra-blanco">@motomoto.oficial</a></h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/telefono-celular.png" alt="Cel" width="20">
+                    <h6 class="colorletra-blanco">1145238475</h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/telefono.png" alt="Fijo" width="20">
+                    <h6 class="colorletra-blanco">82739482</h6>
+                </li>
             </ul>
         </div>
+        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

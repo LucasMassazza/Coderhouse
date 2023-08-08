@@ -44,6 +44,10 @@ a{
     font-style: bold;
 }
 
+.navbar-nav .nav-link.disabled {
+    color: rgb(79, 80, 80);
+}
+
 
 /*Grids Body*/
 
@@ -190,6 +194,57 @@ MAIN
     border: 1px white solid;
     margin: 20px;
 }
+
+
+/*********** MAIN REGISTRO *****************/
+
+.main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-registro{
+    width: 30%;
+}
+
+.form-registro div{
+    text-align: left;
+}
+
+
+/***************** MAIN COMPRAR *************************/
+
+.main-comprar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Imagen-descripcion {
+    display: flex;
+}
+
+.mo
+
+.descripcion-moto{
+    margin-bottom: 1
+}
+
+.imagen-moto,
+.descripcion-moto {
+    flex: 1;
+    padding: 10px;
+    margin: 10%;
+    box-sizing: border-box;
+}
+
+.centrado-imagenn{
+    text-align: center;
+}
+
 
 /*************************
         Footer

@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="../CSS/css.css">
-    <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div>
-            <center><img src="../Imagenes/favicon.png" alt="Logo" class="Logo"></center>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Motos Usadas</title>
+        <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/css.css">
+    </head>
+<body class="bodyIndex colorfondo-body">
+
+    <header class="">
+                
+        <nav class="navbar navbar-expand-lg color-navbar" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./Index.html">
+                <img src="../Imagenes/favicon.png" alt="logo" class="logotipo">
+            </a>
             <h1>MotoMoto</h1>
-        </div>
-        
-        <!--<img src="./Imagenes/open_menu.png" alt="Menu" width="30" class="aperturamenu">-->
-        
-        <nav>
-            <ul class="ListaMenu">
-                <li><a href="../Index.html" >Inicio</a></li>
-                <li><a href="./NewBikes.html" >Nuevas</a></li>
-                <li><a href="./UsedBikes.html" >Usadas</a></li>
-                <li><a href="./Stores.html" >Tiendas</a></li>
-                <li><a href="./TestDrive.html" >Test Drive</a></li>
-                <li><a href="./Registro.html" >Registro</a></li>
-                <li><a href="./Profile.html" >Mi Perfil</a></li>
-            </ul>
-        </nav>
-        <hr align="center" size="0.5">
-    </header>
-    <hr align="center" size="0.5">
-    <main class="mainprofile">
-        <section class="DatosPerfil">
-            <div>
-                <ul class="ListaDatosPerfil">
-                     <li><label for="nombre">Nombre</label></li>
-                     <li><label for="Apellido">Apellido</label></li>
-                     <li><label for="Edad">Edad</label></li>
-                     <li><label for="Correo">Correo</label></li>
-                     <li><label for="genero">Genero</label></li>
-                     <li><label for="Direccion">Direccion</label></li>
-                     <li><label for="Nacionalidad">Nacionalidad</label></li>
-                     </ul>
-                 </div>
-            <div class="ContenedorBotonDatos">
-                <input type="button" name="cambiarclave" id="change_pwd" value="Cambiar Contrasena" class="BotonDatos">
-                <input type="button" name="cambiarperfil" id="change_profile" value="Cambiar Datos Perfil" class="BotonDatos">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  colorletra-blanco"  href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco"  href="./NewBikes.html">Nuevas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco "  href="./UsedBikes.html">Usadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco" href="./TestDrive.html">Test Drive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorletra-blanco"  href="./Registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active colorletra-blanco" aria-current="page" href="./Profile.html">Mi Perfil</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        
+        </nav>
+    </header>
+
+    <main class="main-registro">
+
+        <form class="colorletra-blanco form-registro">
+            <div class="row">
+                <div class="col">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" class="form-control" >
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
+              <br>
+            </div>
+            <div class="form-group">
+                <label for="nacionalidad">Nacionalidad</label>
+                <input type="text" class="form-control" id="nacionalidad">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="genero">Genero</label>
+                <input type="text" class="form-control" id="genero">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contrasena</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Direccion</label>
+                <input type="text" class="form-control" id="direccion">
+                <br>
+              </div>
+            <div class="row">
+                <div class="col ">
+                  <input type="number" class="form-control">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            <br><br>
+            <button type="" class="btn btn-secondary">Modificar Datos</button>
+        </form>
+
     </main>
-    <hr align="center" size="0.5">
-    <footer>
-        <div>
-            <ul class="ListaFooter">
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/email.png" alt="Mail" width="20">
-                    <li><h6><a href="motomoto@gmail.com">motomoto@gmail.com</a></h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/instagram.png" alt="Ig" width="20">
-                    <li><h6><a href="@motmoto.oficial">@motomoto.oficial</a></h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/telefono-celular.png" alt="Cel" width="20">
-                    <li><h6>1145238475</h6></li>
-                </li>
-                <li class="ItemListaFooter">
-                    <img src="../Imagenes/telefono.png" alt="Fijo" width="20">
-                    <li><h6>82739482</h6></li>
-                </li>
-            </ul>
-        </div>
-        
-        <img src="../Imagenes/favicon.png" alt="Logo" width="100">
-        
-        <div>
+
+    <footer class="colorfondo-footer">
+
+        <div class="contacto">
             <ul>
-                <li><img src="../Imagenes/KTM-Logo.svg.png" alt="Marcas" width="100" height="50"></li>
-                <li><img src="../Imagenes/Benelli-logo-1.jpg" alt="Marcas" width="100" height="50"></li>
-                <li><img src="../Imagenes/voge-motos-logo-615477ECB0-seeklogo.com.png" alt="Marcas" width="100" height="50"></li>
+                <li>
+                    <img src="../Imagenes/email.png" alt="Mail" width="20">
+                    <h6><a href="mailto:motomoto@gmail.com"class="colorletra-blanco">motomoto@gmail.com</a></h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/instagram.png" alt="Ig" width="20">
+                    <h6><a href="https://www.instagram.com/motmoto.oficial/"class="colorletra-blanco">@motomoto.oficial</a></h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/telefono-celular.png" alt="Cel" width="20">
+                    <h6 class="colorletra-blanco">1145238475</h6>
+                </li>
+                <li>
+                    <img src="../Imagenes/telefono.png" alt="Fijo" width="20">
+                    <h6 class="colorletra-blanco">82739482</h6>
+                </li>
             </ul>
         </div>
+        
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
