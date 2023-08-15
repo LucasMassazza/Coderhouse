@@ -59,6 +59,9 @@ h1{
     margin: 20px auto;
 }
 
+
+
+
 .article-main{
     position: absolute;
     top: 55%;
@@ -79,6 +82,7 @@ h1{
 .nav-menu ul{
     display: flex;  
     margin-right: 40px;
+    overflow: hidden;
 }
 
 .nav-menu ul li{
@@ -87,10 +91,12 @@ h1{
 
 .nav-menu ul li a{
     font-size: large;
+    color: gray;
+    transition: 0.2s;
 }
 
 .nav-menu ul li a:hover{
-    color: gray;
+    color: black;
 }
 
 
@@ -120,15 +126,15 @@ h1{
 }
 
 .marcas{
-    height: 10vh;
-    width: 100vw;
+    height: 9.95vh;
+    width: 95vw;
     display: flex;
     justify-content:space-around;
-    background-color: grey;
 }
 
 .logos-marcas{
-    width: 5%;
+    min-width: 5%;
+    max-width: 7%;
     aspect-ratio: 4/3;
     object-fit: contain;
 }
@@ -139,9 +145,10 @@ h1{
 
 
 .index-motos{
-    width: 80vw;
+    width: 100vw;
     height: 30vh;
-    margin-top: 40px;
+    min-height: 210px;
+    margin-top: 50px;
     background-color: gray;
     display: grid;
     place-items: center;
@@ -154,6 +161,10 @@ h1{
     border: 1px black solid;
 }
 
+h3{
+    font-size: x-large;
+    text-align: center;
+}
 .motos-titulo{
     grid-area: motos-titulo;
 }
@@ -161,32 +172,137 @@ h1{
 .motos-nuevas{
     grid-area: motos-nuevas;
     position: relative;
-    width: 100%;
+    width:20vw;
+    min-width: 220px;
+    max-width: 250px;
     height: 100%;
-    background-image: url(../Imagenes/iconos/moto-nueva-icono.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .motos-usadas{
     grid-area: motos-usadas;
     position: relative;
-    width: 100%;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
     height: 100%;
-    background-image: url(../Imagenes/iconos/moto-usada-icono.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .motos-proximas{
     grid-area: motos-proximas;
     position: relative;
-    width: 100%;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
     height: 100%;
-    background-image: url(../Imagenes/iconos/moto-reparar-icono.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.motos-nuevas img,
+.motos-usadas img,
+.motos-proximas img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 20%;
+    width: auto;
+}
+
+.index-accesorios{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.accesorios-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+    flex: 1;
+    max-width: 100%;
+}
+
+.atributos-iconos{
+    width: 130px;
+    height: 130px;
+}
+
+.cambio-color-hover{
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.cambio-color-hover:hover{
+    filter: none; 
+}
+
+/*.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+*/
+
+
+/*************Footer*************/
+
+/*Index Footer*/
+
+.index-contacto{
+    border: 1px black solid;
+    background-color: gray;
+
+}
+
+.index-contacto ul{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-contacto ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.index-contacto ul li img{
+    padding-right: 10px;
+    width: 40px;
+}
+
+h6{
+    font-size: medium;
 }
