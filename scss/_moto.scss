@@ -1,0 +1,149 @@
+
+
+
+.main-motos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .motos-tipomoto{
+        width: 95vw;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px black solid;
+    
+        .moto-cardtipo{
+            img{
+                width: 300px;
+            }
+        }
+    
+    }
+
+    .moto-section-card{
+        border: 1px black solid;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .moto-offroad{
+            border: 1px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .offroad-titulo{
+                width: 95vw;
+                height: 150px;
+                background-image: url(../Imagenes/gif/gif_enduro.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h3{
+                    position: relative;
+                    text-align: center;
+                }
+
+                p{
+                    position: relative;
+                    text-align: center;
+                }
+            }
+        }
+
+        
+        .moto-road{
+            border: 1px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .road-titulo{
+                width: 95vw;
+                height: 150px;
+                background-image: url(../Imagenes/gif/ruta.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h3{
+                    position: relative;
+                    text-align: center;
+                }
+
+                p{
+                    position: relative;
+                    text-align: center;
+                }
+            }
+        }
+
+        .moto-road{
+            border: 1px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .road-titulo{
+                width: 95vw;
+                height: 150px;
+                background-image: url(../Imagenes/gif/ruta.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h3{
+                    position: relative;
+                    text-align: center;
+                }
+
+                p{
+                    position: relative;
+                    text-align: center;
+                }
+            }
+        }
+
+        .moto-vespa{
+            border: 1px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .vespa-titulo{
+                width: 95vw;
+                height: 150px;
+                background-image: url(../Imagenes/gif/ciudad.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                h3{
+                    position: relative;
+                    text-align: center;
+                }
+
+                p{
+                    position: relative;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+

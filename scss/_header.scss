@@ -1,0 +1,118 @@
+.header-index{
+    height: 90vh;
+    border: 1px black solid;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slider-de-imagenes 15s infinite;
+    transition: background-image 2s ease-in-out;
+
+    position: relative;
+
+}
+
+.header{
+    height: 10vh;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav-bar {
+    width: 90vw;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+  
+.navbar-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+}
+  
+.logo {
+    margin-right: 20px;
+}
+
+.logo img{
+    width: 40px;
+}
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    right: 0px;
+}
+  
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+  
+.nav-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-lista li {
+    margin: 0 10px;
+}
+  
+.nav-lista a {
+    text-decoration: bold;
+    color: gray;
+    transition: 0.3s;
+}
+
+.nav-lista a:hover{
+    color: black;
+}
+  
+
+@keyframes slider-de-imagenes {
+    0%, 100% {
+        background-image: url('../Imagenes/MotosVenta/voge500ds.jpeg');
+    }
+    25% {
+        background-image: url('../Imagenes/MotosVenta/voge300ds.jpeg');
+    }
+    50% {
+        background-image: url('../Imagenes/MotosVenta/trk502x.jpeg');
+    }
+    75% {
+        background-image: url('../Imagenes/MotosVenta/ktm390.jpg');
+    }
+}

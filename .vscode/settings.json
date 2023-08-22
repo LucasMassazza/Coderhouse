@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/ArchivosPrueba/index.html"
+    "livePreview.defaultPreviewPath": "/ArchivosPrueba/index.html",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true
 }

@@ -1,0 +1,76 @@
+.main-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .acc-items{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 90vw;
+        border: 1px black solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+
+        .acc-casco{
+            border: 1px black solid;
+            h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .acc-camperas{
+            border: 1px black solid;
+            h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .acc-guantes{
+            border: 1px black solid;
+            h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .acc-pantalon{
+            border: 1px black solid;
+            h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .acc-botas{
+            border: 1px black solid;
+            h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.encuadre-subtitulo{
+    position: relative;
+    width: 100%;
+    border: 1px black solid;
+    margin-top: 20px;
+    h4{
+        padding-left: 20%;
+        text-align: left;
+    }
+}
+
+.acc-card-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

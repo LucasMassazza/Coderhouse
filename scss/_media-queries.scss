@@ -1,0 +1,140 @@
+@media screen and (max-width: 800px) {
+
+    /*Menu de navegacion*/
+
+    .menu-toggle {
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    
+    .nav-lista {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 80vw;
+    }
+    
+    .nav-lista.active {
+      display: flex;
+    }
+    
+    .nav-lista li {
+      margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    /*Index*/
+
+    .index-motos{
+        width: 100vw;
+        height: 60vh;
+        min-height: 210px;
+        background-color: gray;
+        display: grid;
+        place-items: center;
+        grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "motos-titulo" 
+            "motos-nuevas"
+            "motos-usadas"
+            "motos-proximas";
+        /*
+        "motos-titulo motos-titulo motos-titulo"
+        "motos-nuevas motos-usadas motos-proximas";*/
+    
+        border: 1px black solid;
+    }
+
+    .index-accesorios{
+        flex-wrap: wrap;
+    }
+
+    .index-item{
+        flex-wrap: wrap;
+    }
+
+    .index-accesorios{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .accesorios-item{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+        flex: 0;
+        max-width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .desaparecer{
+        display: none;
+    }
+
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width: 400px){
+
+
+    /*Main*/
+
+    .desaparecer-400{
+        display: none;
+    }
+
+
+    .aparecer{
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .subida{
+        bottom: 60px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 90vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+}

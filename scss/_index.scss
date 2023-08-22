@@ -1,0 +1,124 @@
+/*Main*/
+
+.main-index{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.marcas{
+    height: 9.95vh;
+    width: 95vw;
+    display: flex;
+    justify-content:space-around;
+}
+
+.logos-marcas{
+    min-width: 5%;
+    max-width: 7%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.logo-fondoblanco{
+    mix-blend-mode: color-burn;
+}
+
+
+.index-motos{
+    width: 100vw;
+    height: 30vh;
+    min-height: 210px;
+    margin-top: 50px;
+    background-color: gray;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "motos-titulo motos-titulo motos-titulo"
+    "motos-nuevas motos-usadas motos-proximas";
+
+    border: 1px black solid;
+}
+
+.motos-titulo{
+    grid-area: motos-titulo;
+}
+
+.motos-nuevas{
+    grid-area: motos-nuevas;
+    position: relative;
+    width:20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-usadas{
+    grid-area: motos-usadas;
+    position: relative;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-proximas{
+    grid-area: motos-proximas;
+    position: relative;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-nuevas img,
+.motos-usadas img,
+.motos-proximas img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 20%;
+    width: auto;
+}
+
+.index-accesorios{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.accesorios-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.atributos-iconos{
+    width: 130px;
+    height: 130px;
+}
+
+.cambio-color-hover{
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.cambio-color-hover:hover{
+    filter: none; 
+}
+
+
+

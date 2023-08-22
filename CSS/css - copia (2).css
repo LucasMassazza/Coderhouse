@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+.desaparecer-700{
+    display: none;
+}
+
+.borde-box{
+    border: 1px black solid;
+}
+
+
+
+/*Headers*/
+
+/*Header Index*/
+
+
+.header-index{
+    height: 90vh;
+    border: 1px black solid;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slider-de-imagenes 15s infinite;
+    transition: background-image 2s ease-in-out;
+
+    position: relative;
+
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    font-size: 36px;
+    margin: 20px auto;
+}
+
+.nav-bar {
+    width: 90vw;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+  
+.navbar-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+}
+  
+.logo {
+    margin-right: 20px;
+}
+
+.logo img{
+    width: 40px;
+}
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    right: 0px;
+}
+  
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+  
+.nav-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-lista li {
+    margin: 0 10px;
+}
+  
+.nav-lista a {
+    text-decoration: bold;
+    color: gray;
+    transition: 0.3s;
+}
+
+.nav-lista a:hover{
+    color: black;
+}
+  
+
+@keyframes slider-de-imagenes {
+    0%, 100% {
+        background-image: url('../Imagenes/MotosVenta/voge500ds.jpeg');
+    }
+    25% {
+        background-image: url('../Imagenes/MotosVenta/voge300ds.jpeg');
+    }
+    50% {
+        background-image: url('../Imagenes/MotosVenta/trk502x.jpeg');
+    }
+    75% {
+        background-image: url('../Imagenes/MotosVenta/ktm390.jpg');
+    }
+}
+
+
+
+
+
+/*Mains*/
+
+/*inicio*/
+
+.main-index{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.marcas{
+    height: 9.95vh;
+    width: 95vw;
+    display: flex;
+    justify-content:space-around;
+}
+
+.logos-marcas{
+    min-width: 5%;
+    max-width: 7%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.logo-fondoblanco{
+    mix-blend-mode: color-burn;
+}
+
+
+.index-motos{
+    width: 100vw;
+    height: 30vh;
+    min-height: 210px;
+    margin-top: 50px;
+    background-color: gray;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "motos-titulo motos-titulo motos-titulo"
+    "motos-nuevas motos-usadas motos-proximas";
+
+    border: 1px black solid;
+}
+
+h3{
+    font-size: x-large;
+    text-align: center;
+}
+.motos-titulo{
+    grid-area: motos-titulo;
+}
+
+.motos-nuevas{
+    grid-area: motos-nuevas;
+    position: relative;
+    width:20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-usadas{
+    grid-area: motos-usadas;
+    position: relative;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-proximas{
+    grid-area: motos-proximas;
+    position: relative;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.motos-nuevas img,
+.motos-usadas img,
+.motos-proximas img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 20%;
+    width: auto;
+}
+
+.index-accesorios{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.accesorios-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.atributos-iconos{
+    width: 130px;
+    height: 130px;
+}
+
+.cambio-color-hover{
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.cambio-color-hover:hover{
+    filter: none; 
+}
+
+
+
+/*Contacto*/
+
+.main-contacto form{
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.main-contacto h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.caja-grande{
+    height: 200px;
+
+}
+
+.div-centrado{
+    text-align: center;
+}
+
+
+/*Motos*/
+
+
+
+/*************Footer*************/
+
+/*Footer*/
+
+.index-contacto{
+    border: 1px black solid;
+    background-color: gray;
+    padding: 20px;
+}
+
+.index-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.alineado{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h6{
+    font-size: medium;
+}
+
+
+
+
+/*Media Queries*/
+
+/***************Header***************/
+
+/*Index*/
+
+@media screen and (max-width: 800px) {
+    .menu-toggle {
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    
+    .nav-lista {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 80vw;
+    }
+    
+    .nav-lista.active {
+      display: flex;
+    }
+    
+    .nav-lista li {
+      margin: 10px 0;
+    }
+
+
+
+
+
+}
+
+
+
+/*************Main************/
+
+
+
+@media (max-width: 700px){
+
+    /*Index*/
+
+    .index-motos{
+        width: 100vw;
+        height: 60vh;
+        min-height: 210px;
+        background-color: gray;
+        display: grid;
+        place-items: center;
+        grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "motos-titulo" 
+            "motos-nuevas"
+            "motos-usadas"
+            "motos-proximas";
+        /*
+        "motos-titulo motos-titulo motos-titulo"
+        "motos-nuevas motos-usadas motos-proximas";*/
+    
+        border: 1px black solid;
+    }
+    
+    h3{
+        font-size: large;
+        text-align: center;
+    }
+
+    .index-accesorios{
+        flex-wrap: wrap;
+    }
+
+    .index-item{
+        flex-wrap: wrap;
+    }
+
+
+
+    .index-accesorios{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .accesorios-item{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+        flex: 0;
+        max-width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .desaparecer{
+        display: none;
+    }
+
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width: 400px){
+
+
+    /*Main*/
+
+    .desaparecer-400{
+        display: none;
+    }
+
+    .pegado{
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .subida{
+        bottom: 60px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 90vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+}

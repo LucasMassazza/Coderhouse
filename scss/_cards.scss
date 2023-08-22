@@ -1,0 +1,31 @@
+    .moto-card{
+        width: 310px;
+        
+        border: 1px black solid;
+        margin: 40px;
+
+        img{
+            width: 310px;
+        }
+
+        div{
+            margin: 10px;
+            p{
+                margin: 10px;
+            }
+        }
+
+        .moto-card-boton{
+            margin-top: 30px;
+            height: 40px;
+            text-align: center;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color: black;
+            }
+        }
+    }
