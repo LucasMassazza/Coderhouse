@@ -122,92 +122,106 @@ h4 {
   75% {
     background-image: url("../Imagenes/MotosVenta/ktm390.jpg"); } }
 
-.index-contacto {
-  border: 1px black solid;
+footer .index-contacto {
   background-color: gray;
-  padding: 20px; }
-
-.index-contacto {
+  padding: 20px;
   display: flex;
-  justify-content: center; }
-
-.alineado {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px; }
+  justify-content: space-around;
+  align-items: center; }
+  footer .index-contacto div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .index-contacto div a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+      color: black; }
+    footer .index-contacto div h6 {
+      margin-left: 5px;
+      font-size: 1rem; }
 
 .desaparecer-iconosfixed {
   display: none; }
+
+.desaparecer {
+  display: flex; }
 
 /*Main*/
 .main-index {
   display: flex;
   align-items: center;
   flex-direction: column; }
-
-.marcas {
-  height: 9.95vh;
-  width: 95vw;
-  display: flex;
-  justify-content: space-around; }
-
-.logos-marcas {
-  min-width: 5%;
-  max-width: 7%;
-  aspect-ratio: 4/3;
-  object-fit: contain; }
-
-.logo-fondoblanco {
-  mix-blend-mode: color-burn; }
-
-.index-motos {
-  width: 100vw;
-  height: 30vh;
-  min-height: 210px;
-  margin-top: 50px;
-  background-color: gray;
-  display: grid;
-  place-items: center;
-  grid-template-rows: 0.3fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "motos-titulo motos-titulo motos-titulo" "motos-nuevas motos-usadas motos-proximas";
-  border: 1px black solid; }
-
-.motos-titulo {
-  grid-area: motos-titulo; }
-
-.motos-nuevas {
-  grid-area: motos-nuevas;
-  position: relative;
-  width: 20vw;
-  min-width: 220px;
-  max-width: 250px;
-  height: 100%; }
-
-.motos-usadas {
-  grid-area: motos-usadas;
-  position: relative;
-  width: 20vw;
-  min-width: 220px;
-  max-width: 250px;
-  height: 100%; }
-
-.motos-proximas {
-  grid-area: motos-proximas;
-  position: relative;
-  width: 20vw;
-  min-width: 220px;
-  max-width: 250px;
-  height: 100%; }
-
-.motos-nuevas img,
-.motos-usadas img,
-.motos-proximas img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  min-width: 20%;
-  width: auto; }
+  .main-index .index-motos {
+    width: 100vw;
+    height: 30vh;
+    min-height: 210px;
+    margin-top: 50px;
+    background-color: gray;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "motos-titulo motos-titulo motos-titulo" "motos-nuevas motos-usadas motos-proximas"; }
+    .main-index .index-motos .motos-titulo {
+      grid-area: motos-titulo; }
+    .main-index .index-motos .motos-nuevas {
+      grid-area: motos-nuevas;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-width: 220px;
+      height: 100%;
+      background-image: url(../Imagenes/fondos/nuevas-index.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .main-index .index-motos .motos-usadas {
+      grid-area: motos-usadas;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-width: 220px;
+      height: 100%;
+      background-image: url(../Imagenes/fondos/usadas-index.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .main-index .index-motos .motos-proximas {
+      grid-area: motos-proximas;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-width: 220px;
+      height: 100%;
+      background-image: url(../Imagenes/fondos/taller-index.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .main-index .index-motos .motos-nuevas h3,
+    .main-index .index-motos .motos-usadas h3,
+    .main-index .index-motos .motos-proximas h3 {
+      text-align: center; }
+  .main-index .marcas {
+    margin-top: 40px;
+    height: 9.95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: space-around; }
+    .main-index .marcas .logos-marcas {
+      min-width: 5%;
+      max-width: 7%;
+      aspect-ratio: 4/3;
+      object-fit: contain; }
+    .main-index .marcas .logo-fondoblanco {
+      mix-blend-mode: color-burn; }
 
 .index-accesorios {
   margin-top: 70px;
@@ -216,29 +230,24 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.accesorios-item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 20px; }
-
-.accesorios-botas, .accesorios-campera, .accesorios-casco, .accesorios-guantes, .accesorios-pantalon {
-  flex: 1;
-  max-width: 100%;
-  text-align: center; }
-
-.atributos-iconos {
-  width: 130px;
-  height: 130px; }
-
-.cambio-color-hover {
-  filter: grayscale(100%);
-  transition: filter 0.3s; }
-
-.cambio-color-hover:hover {
-  filter: none; }
+  .index-accesorios .accesorios-item {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px; }
+    .index-accesorios .accesorios-item .accesorios-botas, .index-accesorios .accesorios-item .accesorios-campera, .index-accesorios .accesorios-item .accesorios-casco, .index-accesorios .accesorios-item .accesorios-guantes, .index-accesorios .accesorios-item .accesorios-pantalon {
+      flex: 1;
+      max-width: 100%;
+      text-align: center; }
+      .index-accesorios .accesorios-item .accesorios-botas .atributos-iconos, .index-accesorios .accesorios-item .accesorios-campera .atributos-iconos, .index-accesorios .accesorios-item .accesorios-casco .atributos-iconos, .index-accesorios .accesorios-item .accesorios-guantes .atributos-iconos, .index-accesorios .accesorios-item .accesorios-pantalon .atributos-iconos {
+        width: 130px;
+        height: 130px; }
+      .index-accesorios .accesorios-item .accesorios-botas .cambio-color-hover, .index-accesorios .accesorios-item .accesorios-campera .cambio-color-hover, .index-accesorios .accesorios-item .accesorios-casco .cambio-color-hover, .index-accesorios .accesorios-item .accesorios-guantes .cambio-color-hover, .index-accesorios .accesorios-item .accesorios-pantalon .cambio-color-hover {
+        filter: grayscale(100%);
+        transition: filter 0.3s; }
+      .index-accesorios .accesorios-item .accesorios-botas .cambio-color-hover:hover, .index-accesorios .accesorios-item .accesorios-campera .cambio-color-hover:hover, .index-accesorios .accesorios-item .accesorios-casco .cambio-color-hover:hover, .index-accesorios .accesorios-item .accesorios-guantes .cambio-color-hover:hover, .index-accesorios .accesorios-item .accesorios-pantalon .cambio-color-hover:hover {
+        filter: none; }
 
 .main-motos {
   display: flex;
@@ -253,93 +262,68 @@ h4 {
     border: 1px black solid; }
     .main-motos .motos-tipomoto .moto-cardtipo img {
       width: 300px; }
-  .main-motos .moto-section-card {
+  .main-motos .moto-offroad {
     border: 1px black solid;
     display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-    justify-content: space-around;
-    align-items: center; }
-    .main-motos .moto-section-card .moto-offroad {
-      border: 1px black solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px; }
+    .main-motos .moto-offroad .offroad-titulo {
+      width: 95vw;
+      height: 150px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      margin-top: 4rem; }
-      .main-motos .moto-section-card .moto-offroad .offroad-titulo {
-        width: 95vw;
-        height: 150px;
-        background-image: url(../Imagenes/gif/gif_enduro.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; }
-        .main-motos .moto-section-card .moto-offroad .offroad-titulo h3 {
-          position: relative;
-          text-align: center; }
-        .main-motos .moto-section-card .moto-offroad .offroad-titulo p {
-          position: relative;
-          text-align: center; }
-    .main-motos .moto-section-card .moto-road {
-      border: 1px black solid;
+      background-image: url(../Imagenes/gif/gif_enduro.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .main-motos .moto-road {
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem; }
+    .main-motos .moto-road .road-titulo {
+      width: 95vw;
+      height: 150px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      margin-top: 4rem; }
-      .main-motos .moto-section-card .moto-road .road-titulo {
-        width: 95vw;
-        height: 150px;
-        background-image: url(../Imagenes/gif/ruta.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; }
-        .main-motos .moto-section-card .moto-road .road-titulo h3 {
-          position: relative;
-          text-align: center; }
-        .main-motos .moto-section-card .moto-road .road-titulo p {
-          position: relative;
-          text-align: center; }
-    .main-motos .moto-section-card .moto-road {
-      border: 1px black solid;
+      background-image: url(../Imagenes/gif/ruta.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .main-motos .moto-vespa {
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem; }
+    .main-motos .moto-vespa .vespa-titulo {
+      width: 95vw;
+      height: 150px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      margin-top: 4rem; }
-      .main-motos .moto-section-card .moto-road .road-titulo {
-        width: 95vw;
-        height: 150px;
-        background-image: url(../Imagenes/gif/ruta.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; }
-        .main-motos .moto-section-card .moto-road .road-titulo h3 {
-          position: relative;
-          text-align: center; }
-        .main-motos .moto-section-card .moto-road .road-titulo p {
-          position: relative;
-          text-align: center; }
-    .main-motos .moto-section-card .moto-vespa {
-      border: 1px black solid;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: 4rem; }
-      .main-motos .moto-section-card .moto-vespa .vespa-titulo {
-        width: 95vw;
-        height: 150px;
-        background-image: url(../Imagenes/gif/ciudad.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; }
-        .main-motos .moto-section-card .moto-vespa .vespa-titulo h3 {
-          position: relative;
-          text-align: center; }
-        .main-motos .moto-section-card .moto-vespa .vespa-titulo p {
-          position: relative;
-          text-align: center; }
+      background-image: url(../Imagenes/gif/ciudad.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+
+.moto-section-card {
+  border: 1px black solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: space-around;
+  align-items: center; }
 
 .main-contacto form {
   width: 50vw;
@@ -359,8 +343,10 @@ h4 {
 
 .main-taller {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center; }
+  height: 80vh; }
   .main-taller h2 {
     margin-top: 40px; }
   .main-taller .taller-servicios {
@@ -464,6 +450,11 @@ h4 {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+.pegado-fondo {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
 @media screen and (max-width: 800px) {
   /*Menu de navegacion*/
   .menu-toggle {
@@ -497,9 +488,6 @@ h4 {
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
     grid-template-columns: 1fr;
     grid-template-areas: "motos-titulo"  "motos-nuevas" "motos-usadas" "motos-proximas";
-    /*
-        "motos-titulo motos-titulo motos-titulo"
-        "motos-nuevas motos-usadas motos-proximas";*/
     border: 1px black solid; }
   .index-accesorios {
     flex-wrap: wrap; }
@@ -524,7 +512,8 @@ h4 {
     max-width: 100%;
     margin: 20px;
     text-align: center; }
-  .desaparecer {
+  /*Footer*/
+  .desaparecer-700 {
     display: none; }
   /*Contacto*/
   .main-contacto form {
@@ -533,7 +522,7 @@ h4 {
     margin-bottom: 60px;
     margin-top: 40px; } }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   /*Main*/
   .desaparecer-400 {
     display: none; }

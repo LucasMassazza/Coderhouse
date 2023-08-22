@@ -1,8 +1,10 @@
 
 .main-taller{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 80vh;
 
     h2{
         margin-top: 40px;

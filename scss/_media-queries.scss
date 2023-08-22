@@ -48,10 +48,7 @@
             "motos-nuevas"
             "motos-usadas"
             "motos-proximas";
-        /*
-        "motos-titulo motos-titulo motos-titulo"
-        "motos-nuevas motos-usadas motos-proximas";*/
-    
+            
         border: 1px black solid;
     }
 
@@ -87,8 +84,11 @@
         margin: 20px;
         text-align: center;
     }
-    
-    .desaparecer{
+
+
+    /*Footer*/
+
+    .desaparecer-700{
         display: none;
     }
 
@@ -104,7 +104,7 @@
     
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 
 
     /*Main*/

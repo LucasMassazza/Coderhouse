@@ -1,20 +1,40 @@
-.index-contacto{
-    border: 1px black solid;
-    background-color: gray;
-    padding: 20px;
-}
 
-.index-contacto{
-    display: flex;
-    justify-content: center;
-}
+footer{
 
-.alineado{
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    .index-contacto{
+        background-color: gray;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+                color: black;
+            }
+
+            h6{
+                margin-left: 5px;
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 .desaparecer-iconosfixed{
     display: none;
 }
+
+.desaparecer{
+    display: flex;
+}
+
+
