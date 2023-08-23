@@ -26,6 +26,14 @@ h3 {
 h4 {
   font-size: larger; }
 
+.header {
+  height: 10vh;
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+
 .header-index {
   height: 90vh;
   border: 1px black solid;
@@ -40,14 +48,6 @@ h4 {
   transition: background-image 2s ease-in-out;
   position: relative; }
 
-.header {
-  height: 10vh;
-  border: 1px black solid;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative; }
-
 .logo {
   width: 50px;
   margin-left: 20px; }
@@ -58,6 +58,10 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+h1 {
+  font-size: 36px;
+  margin: 20px auto; }
 
 .nav-bar {
   width: 90vw;
@@ -126,6 +130,7 @@ footer .index-contacto {
   background-color: gray;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center; }
   footer .index-contacto div {
@@ -148,7 +153,6 @@ footer .index-contacto {
 .desaparecer {
   display: flex; }
 
-/*Main*/
 .main-index {
   display: flex;
   align-items: center;
@@ -211,17 +215,12 @@ footer .index-contacto {
       text-align: center; }
   .main-index .marcas {
     margin-top: 40px;
-    height: 9.95vh;
+    height: 10vh;
     width: 95vw;
     display: flex;
     justify-content: space-around; }
-    .main-index .marcas .logos-marcas {
-      min-width: 5%;
-      max-width: 7%;
-      aspect-ratio: 4/3;
-      object-fit: contain; }
-    .main-index .marcas .logo-fondoblanco {
-      mix-blend-mode: color-burn; }
+    .main-index .marcas a .logos-marcas {
+      width: 100px; }
 
 .index-accesorios {
   margin-top: 70px;
@@ -255,7 +254,7 @@ footer .index-contacto {
   flex-direction: column; }
   .main-motos .motos-tipomoto {
     width: 95vw;
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -348,7 +347,8 @@ footer .index-contacto {
   flex-direction: column;
   height: 80vh; }
   .main-taller h2 {
-    margin-top: 40px; }
+    margin-top: 40px;
+    text-align: center; }
   .main-taller .taller-servicios {
     width: 95vw;
     display: flex;
@@ -356,6 +356,8 @@ footer .index-contacto {
     justify-content: space-around;
     margin: 50px;
     border: 1px black solid; }
+    .main-taller .taller-servicios .main-taller-titulo {
+      text-align: center; }
     .main-taller .taller-servicios div {
       display: flex;
       justify-content: space-around; }
@@ -365,21 +367,25 @@ footer .index-contacto {
         height: 30vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
         max-width: 300px; }
         .main-taller .taller-servicios div div h3 {
           position: relative;
-          margin-bottom: 20%; }
+          text-align: center; }
         .main-taller .taller-servicios div div p {
           position: relative;
           text-align: center; }
+        .main-taller .taller-servicios div div a {
+          color: black; }
 
 .moto-card {
   width: 310px;
   border: 1px black solid;
   margin: 40px; }
   .moto-card img {
-    width: 310px; }
+    position: relative;
+    width: 100%; }
   .moto-card div {
     margin: 10px; }
     .moto-card div p {
@@ -440,10 +446,9 @@ footer .index-contacto {
   position: relative;
   width: 100%;
   border: 1px black solid;
-  margin-top: 20px; }
-  .encuadre-subtitulo h4 {
-    padding-left: 20%;
-    text-align: left; }
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 60px; }
 
 .acc-card-items {
   display: flex;
@@ -455,7 +460,7 @@ footer .index-contacto {
   bottom: 0px;
   width: 100%; }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 700px) {
   /*Menu de navegacion*/
   .menu-toggle {
     color: black;
@@ -474,21 +479,19 @@ footer .index-contacto {
   .nav-lista.active {
     display: flex; }
   .nav-lista li {
-    margin: 10px 0; } }
-
-@media (max-width: 700px) {
+    margin: 10px 0; }
   /*Index*/
-  .index-motos {
-    width: 100vw;
-    height: 60vh;
-    min-height: 210px;
-    background-color: gray;
-    display: grid;
-    place-items: center;
-    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
+  .main-index .index-motos {
+    height: 35vh;
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
-    grid-template-areas: "motos-titulo"  "motos-nuevas" "motos-usadas" "motos-proximas";
-    border: 1px black solid; }
+    grid-template-areas: "motos-titulo" "motos-nuevas" "motos-usadas" "motos-proximas"; }
+    .main-index .index-motos .motos-nuevas {
+      height: 10vh; }
+    .main-index .index-motos .motos-usadas {
+      height: 10vh; }
+    .main-index .index-motos .motos-proximas {
+      height: 10vh; }
   .index-accesorios {
     flex-wrap: wrap; }
   .index-item {
@@ -512,6 +515,46 @@ footer .index-contacto {
     max-width: 100%;
     margin: 20px;
     text-align: center; }
+  /*Motos*/
+  .main-motos .motos-tipomoto {
+    margin-top: 30px;
+    flex-direction: column;
+    height: 900px; }
+  /*Accesorios*/
+  .encuadre-subtitulo {
+    text-align: center;
+    padding-left: 0px; }
+  /*Cards*/
+  .moto-card {
+    width: 290px; }
+    .moto-card img {
+      position: relative;
+      width: 100%; }
+  /*Taller*/
+  .main-taller {
+    height: 155vh; }
+    .main-taller .main-taller-titulo {
+      margin-top: 70px;
+      margin-bottom: 20px; }
+    .main-taller .taller-servicios {
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
+      border: 1px black solid; }
+      .main-taller .taller-servicios div {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; }
+        .main-taller .taller-servicios div div {
+          margin-bottom: 20px;
+          border: 1px black solid;
+          width: 90vw;
+          height: 40vh; }
+  .pegado-fondo {
+    position: relative;
+    width: 100%; }
   /*Footer*/
   .desaparecer-700 {
     display: none; }
@@ -522,7 +565,7 @@ footer .index-contacto {
     margin-bottom: 60px;
     margin-top: 40px; } }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   /*Main*/
   .desaparecer-400 {
     display: none; }

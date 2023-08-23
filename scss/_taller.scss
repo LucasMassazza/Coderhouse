@@ -8,6 +8,7 @@
 
     h2{
         margin-top: 40px;
+        text-align: center;
     }
 
     .taller-servicios{
@@ -18,7 +19,11 @@
         justify-content: space-around;
         margin: 50px;
         border: 1px black solid;
-    
+
+        .main-taller-titulo{
+            text-align: center;
+        }
+        
         div{
             display: flex;
             justify-content: space-around;
@@ -28,16 +33,20 @@
                 height: 30vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
                 max-width: 300px;
                 h3{
                     position: relative;
-                    margin-bottom: 20%;
+                    text-align: center;
                 }
     
                 p{
                     position: relative;
                     text-align: center;
+                }
+                a{
+                    color: black;
                 }
             }
         }

@@ -8,6 +8,7 @@
     color: black;
 }
 
+@import "media-queries";
 @import "fonts";
 @import "header";
 @import "footer";
@@ -18,9 +19,219 @@
 @import "cards";
 @import "accesorios";
 @import "flex";
-@import "media-queries";
 
 
 
 
+@media (max-width: 700px){
 
+    /*Menu de navegacion*/
+
+    .menu-toggle {
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    
+    .nav-lista {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 80vw;
+    }
+    
+    .nav-lista.active {
+      display: flex;
+    }
+    
+    .nav-lista li {
+      margin: 10px 0;
+    }
+    
+    /*Index*/
+
+    .main-index{
+    
+        .index-motos{
+            height: 35vh;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "motos-titulo"
+            "motos-nuevas"
+            "motos-usadas"
+            "motos-proximas";
+    
+            .motos-nuevas{
+                height: 10vh;
+            }
+            
+            .motos-usadas{
+                height: 10vh;
+            }
+            
+            .motos-proximas{
+                height: 10vh;
+            }
+    
+        }
+    }
+
+    .index-accesorios{
+        flex-wrap: wrap;
+    }
+
+    .index-item{
+        flex-wrap: wrap;
+    }
+
+    .index-accesorios{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .accesorios-item{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
+        flex: 0;
+        max-width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    /*Motos*/
+
+    .main-motos{
+        
+        .motos-tipomoto{
+            margin-top: 30px;
+            flex-direction: column;
+            height: 900px;
+        }
+    }
+
+    /*Accesorios*/
+
+    .encuadre-subtitulo{
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    /*Cards*/
+
+    .moto-card{
+        width: 290px;
+
+        img{
+            position: relative;
+            width: 100%;
+        }
+    }
+
+
+    /*Taller*/
+    .main-taller{
+
+        height: 155vh;
+    
+        .main-taller-titulo{
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+    
+        .taller-servicios{
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            border: 1px black solid;
+    
+            div{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                div{
+                    margin-bottom: 20px;
+                    border: 1px black solid;
+                    width: 90vw;
+                    height: 40vh;
+                }
+            }
+        }
+    }
+
+
+    .pegado-fondo{
+        position: relative;
+        width: 100%;
+    }
+    /*Footer*/
+
+    .desaparecer-700{
+        display: none;
+    }
+
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width: 500px){
+
+
+    /*Main*/
+
+    .desaparecer-400{
+        display: none;
+    }
+
+
+    .aparecer{
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .subida{
+        bottom: 60px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    /*Contacto*/
+
+    .main-contacto form{
+        width: 90vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+}
