@@ -2,7 +2,7 @@
 footer{
 
     .index-contacto{
-        background-color: gray;
+        background-color: $azul-negro-oscuro;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
@@ -19,12 +19,12 @@ footer{
                 align-items: center;
                 justify-content: center;
                 margin-left: 5px;
-                color: black;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
             }
 
             h6{
                 margin-left: 5px;
-                font-size: 1rem;
             }
         }
     }

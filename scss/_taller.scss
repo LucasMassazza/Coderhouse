@@ -17,9 +17,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: 50px;
-        border: 1px black solid;
+        margin: 30px;
 
+        h2{
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
         .main-taller-titulo{
             text-align: center;
         }
@@ -28,7 +31,8 @@
             display: flex;
             justify-content: space-around;
             div{
-                border: 1px black solid;
+                border: 1px $blanco solid;
+                background-color: $marron-claro-oscuro;
                 width: 30vw;
                 height: 30vh;
                 display: flex;
@@ -36,9 +40,10 @@
                 justify-content: space-around;
                 align-items: center;
                 max-width: 300px;
-                h3{
+                h4{
                     position: relative;
                     text-align: center;
+                    color: $negro;
                 }
     
                 p{
@@ -47,6 +52,10 @@
                 }
                 a{
                     color: black;
+
+                    &:hover{
+                        color: $blanco;
+                    }
                 }
             }
         }

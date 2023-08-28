@@ -1,0 +1,113 @@
+/*Coleres*/
+
+$blanco: white;
+$negro: black;
+$gris: grey;
+$verde-pasto: #116D6E;
+$terracota: #321E1E;
+$gris-bordo: #4E3636;
+$naranja-rojo: #CD1818;
+$gris-oscuro: #040D12;
+$azul-negro: #282A3A;
+$azul-negro-oscuro: #1e1f2c;
+$marron-claro: #C69749;
+$marron-claro-oscuro: #cf6807;
+$azul-morado: #394867;
+$beige: #E3CCAE;
+$marron-oscuro: #884A39;
+$azul-claro: #242a52;
+
+/*Fonts*/
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: $blanco;
+
+}
+
+p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.subtitulo{
+    font-size:1.8rem;
+    color: $marron-oscuro;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 20px auto;
+    text-overflow: clip;
+    color: $marron-oscuro;
+    font-weight:bolder;
+}
+
+h2{
+    font-size: 3rem;
+    color: $marron-claro;
+}
+
+h3{
+    font-size: 2rem;
+    color: $marron-claro;
+}
+
+h4{
+    font-size: 1.85rem;
+    color: $marron-claro;
+    text-align: center;
+}
+
+h5{
+    font-size: 1.5rem;
+    color: $marron-claro;
+}
+
+h6{
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+/*Tarjetas Motos-Accesorios*/
+
+.moto-card{
+    width: 310px;
+    border-radius: 5px;
+    border: 1px $blanco solid;
+    margin: 40px;
+    background-color: $marron-claro-oscuro;
+
+    img{
+        position: relative;
+        width: 100%;
+    }
+
+    div{
+        margin: 10px;
+        p{
+            margin: 10px;
+        }
+    }
+
+    .moto-card-boton{
+        margin-top: 30px;
+        height: 40px;
+        text-align: center;
+        border: 1px black solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $azul-negro-oscuro;
+        color: $beige;
+
+        &:hover{
+            background-color: $marron-oscuro;
+            color: $gris-oscuro;
+        }
+    }
+}

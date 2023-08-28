@@ -4,15 +4,15 @@
     flex-direction: column;
 
     .index-motos{
-        width: 100vw;
+        width: 85vw;
         height: 30vh;
         min-height: 210px;
         margin-top: 50px;
-        background-color: gray;
         display: grid;
         place-items: center;
         grid-template-rows: 0.3fr 1fr;
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         grid-template-areas: 
         "motos-titulo motos-titulo motos-titulo"
         "motos-nuevas motos-usadas motos-proximas";
@@ -24,46 +24,71 @@
         .motos-nuevas{
             grid-area: motos-nuevas;
             position: relative;
+            border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             width:100%;
             min-width: 220px;
             height: 100%;
-            background-image: url(../Imagenes/fondos/nuevas-index.jpeg);
+            background-image: url(../Imagenes/fondos/nuevas-index-oscura.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            transition: transform 0.3s ease;
+
+            &:hover{
+                z-index: 4;
+                transform: scale(1.04);
+            }
+
+            a{
+                color: #394867;
+            }
         }
         
         .motos-usadas{
             grid-area: motos-usadas;
             position: relative;
             display: flex;
+            border-radius: 5px;
             align-items: center;
             justify-content: center;
             width: 100%;
             min-width: 220px;
             height: 100%;
-            background-image: url(../Imagenes/fondos/usadas-index.webp);
+            background-image: url(../Imagenes/fondos/usadas-index-modified.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            transition: transform 0.3s ease;
+
+            &:hover{
+                z-index: 4;
+                transform: scale(1.04);
+            }
         }
         
         .motos-proximas{
             grid-area: motos-proximas;
             position: relative;
             display: flex;
+            border-radius: 5px;
             align-items: center;
             justify-content: center;
             width: 100%;
             min-width: 220px;
             height: 100%;
-            background-image: url(../Imagenes/fondos/taller-index.jpg);
+            background-image: url(../Imagenes/fondos/taller-oscura.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            transition: transform 0.3s ease;
+
+            &:hover{
+                z-index: 4;
+                transform: scale(1.04);
+            }
         }
 
         .motos-nuevas h3,
@@ -91,7 +116,7 @@
 .index-accesorios{
     margin-top: 70px;
     margin-bottom: 20px;
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +126,7 @@
         justify-content: space-around;
         width: 100%;
         max-width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
 
         .accesorios-botas,.accesorios-campera,.accesorios-casco,.accesorios-guantes,.accesorios-pantalon{
             flex: 1;
