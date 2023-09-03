@@ -94,18 +94,9 @@ body{
             "motos-usadas"
             "motos-proximas";
     
-            .motos-nuevas{
-                height: 10vh;
+            .motos-nuevas, .motos-usadas, .motos-proximas{
+                height: 200px;
             }
-            
-            .motos-usadas{
-                height: 10vh;
-            }
-            
-            .motos-proximas{
-                height: 10vh;
-            }
-    
         }
     }
 
