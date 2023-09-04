@@ -16,6 +16,9 @@ $azul-morado: #394867;
 $beige: #E3CCAE;
 $marron-oscuro: #884A39;
 $azul-claro: #242a52;
+$negro-argb:rgba(0, 0, 0, 0.4);
+$marron-claro-claro: #ffefd3;
+$beige-claro: #E3CCAE;
 
 /*Fonts*/
 
@@ -33,14 +36,14 @@ p{
 
 .subtitulo{
     font-size:1.8rem;
-    color: $marron-oscuro;
+    color: $blanco;
 }
 
 h1{
     font-size: 5rem;
     margin: 20px auto;
     text-overflow: clip;
-    color: $marron-oscuro;
+    color: $blanco;
     font-weight:bolder;
 }
 
@@ -69,6 +72,8 @@ h6{
     font-size: 1.5rem;
     color: white;
     letter-spacing: 2px;
+    margin-bottom: 0px
+    ;
 }
 
 
@@ -104,6 +109,7 @@ h6{
         align-items: center;
         background-color: $azul-negro-oscuro;
         color: $beige;
+        transition: background-color 0.3s;
 
         &:hover{
             background-color: $marron-oscuro;

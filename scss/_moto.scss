@@ -20,7 +20,6 @@
                     border-radius: 10px;
                 }
             }
- 
         }
     }
 
@@ -38,10 +37,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(../Imagenes/gif/gif_enduro.gif);
+            background-image: url(../Imagenes/fondos/offroad.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            h3{
+                font-size: 2rem;
+                color: $marron-claro-claro;
+            }
         }
     }
 
@@ -60,10 +63,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(../Imagenes/gif/ruta.gif);
+            background-image: url(../Imagenes/fondos/road.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            h3{
+                font-size: 2rem;
+                color: $marron-claro-claro;
+            }
         }
     }
 
@@ -81,10 +88,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(../Imagenes/gif/ciudad.gif);
+            background-image: url(../Imagenes/fondos/city.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            
+            h3{
+                font-size: 2rem;
+                color: $marron-claro-claro;
+            }
         }
     }
 }

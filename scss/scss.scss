@@ -8,6 +8,9 @@
     color: black;
     font-family: 'Rajdhani', sans-serif;
 }
+
+/*Imports*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&;700display=swap');
 @import "framework";
 @import "header";
@@ -19,9 +22,31 @@
 @import "accesorios";
 @import "flex";
 
-
+/*Media Query*/
 body{
     background-color: $azul-negro;
+}
+
+@media (max-width: 800px){
+/*Contacto*/
+    .main-contacto{
+        .main-contacto-div {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        form {
+            flex: none; 
+            margin-right: 0; 
+            width: 70%; 
+        }
+    
+        iframe {
+            flex: none; 
+            width: 80%; 
+            height: 50%;
+        }
+    }
 }
 
 @media (max-width: 700px){
@@ -49,8 +74,8 @@ body{
     
     .nav-lista.active {
       display: flex;
-      width: 101vw;
-      height: 100vh;
+      width: 100vw;
+      height: 95vh;
       background-color: $azul-claro;
     }
     
@@ -85,7 +110,7 @@ body{
     .main-index{
     
         .index-motos{
-            height: 35vh;
+            height: 700px;
             grid-template-rows: repeat(4, 1fr);
             grid-template-columns: 1fr;
             grid-template-areas: 
@@ -145,17 +170,12 @@ body{
         }
     }
 
-    /*Accesorios*/
-
-    .encuadre-subtitulo{
-        text-align: center;
-        padding-left: 0px;
-    }
-
     /*Cards*/
 
     .moto-card{
         width: 290px;
+        margin: 0px;
+        margin-top: 40px;
 
         img{
             position: relative;
@@ -209,18 +229,11 @@ body{
     /*Accesorios*/
 
     .encuadre-subtitulo{
-        padding-left: 50px;
-        text-align: left;
+        padding-left: 0px;
+        text-align: center;
     }
 
-    .main-acc{
-        h4{
-            text-align: center;
-            padding-left: 0px;
-            border-top: 1px solid $beige;
-            padding-top: 20px;
-        }
-    }
+
 
     /*Contacto*/
 

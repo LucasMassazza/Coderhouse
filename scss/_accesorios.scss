@@ -4,6 +4,16 @@
     justify-content: center;
     flex-direction: column;
     margin: 20px;
+    
+    h4{
+        text-align: center;
+        padding-left: 0px;
+        border-top: 1px solid $beige-claro;
+        border-bottom: 1px solid $beige-claro;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
 
 
     .acc-items{

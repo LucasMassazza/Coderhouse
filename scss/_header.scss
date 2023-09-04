@@ -42,15 +42,13 @@
 .nav-bar {
     position: relative;
     width: 100%;
-    background-color: transparent;
+    background-color: $negro-argb;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    backdrop-filter: blur(5px), brightness(50%);
     z-index: 1;
-
 }
   
 .navbar-logo{
@@ -101,8 +99,7 @@
 }
   
 .nav-lista a {
-    text-decoration: bold;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     transition: 0.3s;
 
 }

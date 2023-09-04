@@ -9,6 +9,7 @@
   color: black;
   font-family: 'Rajdhani', sans-serif; }
 
+/*Imports*/
 /*Coleres*/
 /*Fonts*/
 a {
@@ -22,13 +23,13 @@ p {
 
 .subtitulo {
   font-size: 1.8rem;
-  color: #884A39; }
+  color: white; }
 
 h1 {
   font-size: 5rem;
   margin: 20px auto;
   text-overflow: clip;
-  color: #884A39;
+  color: white;
   font-weight: bolder; }
 
 h2 {
@@ -51,7 +52,8 @@ h5 {
 h6 {
   font-size: 1.5rem;
   color: white;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 0px; }
 
 /*Tarjetas Motos-Accesorios*/
 .moto-card {
@@ -77,7 +79,8 @@ h6 {
     justify-content: center;
     align-items: center;
     background-color: #1e1f2c;
-    color: #E3CCAE; }
+    color: #E3CCAE;
+    transition: background-color 0.3s; }
     .moto-card .moto-card-boton:hover {
       background-color: #884A39;
       color: #040D12; }
@@ -120,13 +123,12 @@ h6 {
 .nav-bar {
   position: relative;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  backdrop-filter: blur(5px);
   z-index: 1; }
 
 .navbar-logo {
@@ -168,8 +170,7 @@ h6 {
   margin: 0 10px; }
 
 .nav-lista a {
-  text-decoration: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   transition: 0.3s; }
 
 .nav-lista a:hover {
@@ -290,7 +291,8 @@ footer .index-contacto {
     .main-index .index-motos .motos-nuevas h3,
     .main-index .index-motos .motos-usadas h3,
     .main-index .index-motos .motos-proximas h3 {
-      text-align: center; }
+      text-align: center;
+      color: #ffefd3; }
   .main-index .marcas {
     margin-top: 40px;
     height: 10vh;
@@ -355,10 +357,13 @@ footer .index-contacto {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url(../Imagenes/gif/gif_enduro.gif);
+      background-image: url(../Imagenes/fondos/offroad.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
+      .main-motos .moto-offroad .offroad-titulo h3 {
+        font-size: 2rem;
+        color: #ffefd3; }
   .main-motos .moto-road {
     display: flex;
     align-items: center;
@@ -372,10 +377,13 @@ footer .index-contacto {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url(../Imagenes/gif/ruta.gif);
+      background-image: url(../Imagenes/fondos/road.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
+      .main-motos .moto-road .road-titulo h3 {
+        font-size: 2rem;
+        color: #ffefd3; }
   .main-motos .moto-vespa {
     display: flex;
     align-items: center;
@@ -389,10 +397,13 @@ footer .index-contacto {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url(../Imagenes/gif/ciudad.gif);
+      background-image: url(../Imagenes/fondos/city.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
+      .main-motos .moto-vespa .vespa-titulo h3 {
+        font-size: 2rem;
+        color: #ffefd3; }
 
 .moto-section-card {
   display: flex;
@@ -403,17 +414,22 @@ footer .index-contacto {
 
 .main-contacto {
   color: #C69749; }
-  .main-contacto form {
-    width: 50vw;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    margin-top: 40px; }
-    .main-contacto form .form-label {
-      color: #C69749;
-      font-size: 1.5rem; }
   .main-contacto h2 {
     text-align: center;
     margin-top: 50px; }
+  .main-contacto .main-contacto-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main-contacto .main-contacto-div iframe {
+      flex: 1;
+      margin: 40px; }
+    .main-contacto .main-contacto-div form {
+      flex: 1;
+      margin: 40px; }
+      .main-contacto .main-contacto-div form .form-label {
+        color: #C69749;
+        font-size: 1.5rem; }
 
 .caja-grande {
   height: 200px; }
@@ -472,6 +488,13 @@ footer .index-contacto {
   justify-content: center;
   flex-direction: column;
   margin: 20px; }
+  .main-acc h4 {
+    text-align: center;
+    padding-left: 0px;
+    border-top: 1px solid #E3CCAE;
+    border-bottom: 1px solid #E3CCAE;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .main-acc .acc-items {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -508,8 +531,23 @@ footer .index-contacto {
   bottom: 0px;
   width: 100%; }
 
+/*Media Query*/
 body {
   background-color: #282A3A; }
+
+@media (max-width: 800px) {
+  /*Contacto*/
+  .main-contacto .main-contacto-div {
+    display: flex;
+    flex-direction: column; }
+  .main-contacto form {
+    flex: none;
+    margin-right: 0;
+    width: 70%; }
+  .main-contacto iframe {
+    flex: none;
+    width: 80%;
+    height: 50%; } }
 
 @media (max-width: 700px) {
   /*Menu de navegacion*/
@@ -530,8 +568,8 @@ body {
     width: 80vw; }
   .nav-lista.active {
     display: flex;
-    width: 101vw;
-    height: 100vh;
+    width: 100vw;
+    height: 95vh;
     background-color: #242a52; }
   .nav-lista li {
     margin: 10px 0; }
@@ -547,16 +585,12 @@ body {
     font-size: 1.3rem; }
   /*Index*/
   .main-index .index-motos {
-    height: 35vh;
+    height: 700px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas: "motos-titulo" "motos-nuevas" "motos-usadas" "motos-proximas"; }
-    .main-index .index-motos .motos-nuevas {
-      height: 10vh; }
-    .main-index .index-motos .motos-usadas {
-      height: 10vh; }
-    .main-index .index-motos .motos-proximas {
-      height: 10vh; }
+    .main-index .index-motos .motos-nuevas, .main-index .index-motos .motos-usadas, .main-index .index-motos .motos-proximas {
+      height: 200px; }
   .index-accesorios {
     flex-wrap: wrap; }
   .index-item {
@@ -585,13 +619,11 @@ body {
     margin-top: 30px;
     flex-direction: column;
     height: 900px; }
-  /*Accesorios*/
-  .encuadre-subtitulo {
-    text-align: center;
-    padding-left: 0px; }
   /*Cards*/
   .moto-card {
-    width: 290px; }
+    width: 290px;
+    margin: 0px;
+    margin-top: 40px; }
     .moto-card img {
       position: relative;
       width: 100%; }
@@ -624,13 +656,8 @@ body {
     display: none; }
   /*Accesorios*/
   .encuadre-subtitulo {
-    padding-left: 50px;
-    text-align: left; }
-  .main-acc h4 {
-    text-align: center;
     padding-left: 0px;
-    border-top: 1px solid #E3CCAE;
-    padding-top: 20px; }
+    text-align: center; }
   /*Contacto*/
   .main-contacto form {
     width: 80vw;
